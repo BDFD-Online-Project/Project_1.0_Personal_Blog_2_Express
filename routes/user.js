@@ -7,12 +7,12 @@ var router = express.Router();
 //descriptions: list out all user name list
 //comments:
 router.post('/login', function(req, res, next) {
-  const { username, password } = req.body;
+  const { username, city } = req.body;
   console.log('req.body', req.body);
 
   res.json({
     errno: 0,
-    data: { username, password }
+    data: { username, city }
   });
 });
 
